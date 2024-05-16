@@ -1,8 +1,8 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE :
-## NAME :																			             
-## ROLLNUMBER :
-## DEPARTMENT 
+## DATE :16/5/24
+## NAME :B NARESH																			             
+## ROLLNUMBER :21221080012
+## DEPARTMENT mechanical engineering
 
 
 ## AIM:
@@ -58,12 +58,36 @@ FIGURE-02
 
 FIGURE -03
 
+![Screenshot 2024-05-16 104347](https://github.com/vasanthkumarch/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/118343892/2c0ff20b-61ce-4063-b158-3c4c7e02ad98)
 
 
 
 ## PROGRAM 
+ ```
  
+
+int buttonstate = 0;
+
+void setup()
+{
+ pinMode(2, INPUT);
+ pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+ buttonstate = digitalRead(2);  //
+ if (buttonstate == HIGH){
+   digitalWrite(13, HIGH);
+ }
+ else{
+   digitalWrite(13, LOW);
+ }
  
+ delay(15); //
+ 
+}
+
 
 
 
@@ -82,4 +106,5 @@ FIGURE -03
 ## OUTPUT OF SIMULATION :
 
 [My image](username.github.com/repository/img/image.jpg)
-
+![Screenshot 2024-05-16 104347](https://github.com/vasanthkumarch/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/118343892/b5a321eb-6793-4531-b974-57edd412bd00)
+this experiment was do sucssesfully
